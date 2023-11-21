@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ <form action="process.php" method="post">
+        <!-- elemen formulir -->
+ </form>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran BPJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pendaftaran BPJS</h2>
+        <form action="process.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" required>
+
+            <label for="nik">NIK:</label>
+            <input type="text" name="nik" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select name="jenis_kelamin" required>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label for="alamat">Alamat:</label>
+            <textarea name="alamat" required></textarea>
+
+            <label for="no_telepon">No Telepon:</label>
+            <input type="text" name="no_telepon" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
